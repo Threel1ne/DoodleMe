@@ -1,0 +1,301 @@
+@import 'tailwindcss';
+
+body {
+  background-image: url('./assets/bg.png');
+  font-family: 'Shantell Sans';
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.centerbutton {
+  margin-top: 20%;
+  transition: ease-in-out 0.3s;
+}
+
+.center-button-start {
+  margin-bottom: 10px;
+}
+
+.logo {
+  margin-top: 20px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.players-box {
+  background-color: #b06d1e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.players-title {
+  font-size: 24px;
+  color: white;
+}
+
+.player-card {
+  background-color: #f6c06b;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.invite-button, .start-button {
+  width: 60%;
+  padding: 15px;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.invite-button {
+  background-color: #f48c42;
+}
+
+.start-button {
+  background-color: #f0651e;
+}
+
+.shop-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+}
+
+.shop-modal {
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  transform: translate(-20%, -25%);
+  background: #c47d1e;
+  padding: 30px; /* More padding for space */
+  border-radius: 15px; /* Slightly rounder corners */
+  width: 50vw; /* Wider */
+  height: 60vh; /* Taller */
+  text-align: center;
+  z-index: 11;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Keeps it looking clean */
+}
+
+.shop-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.shop-sections {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.shop-box {
+  background: #a05d15;
+  padding: 40px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+  margin: 20px;
+  height: 350px;
+}
+
+.Avatar-box {
+  padding: 40px 200px 0px 200px;
+}
+.Theme-box {
+  padding: 40px 100px 0px 100px;
+}
+
+.shop-box p {
+  margin-bottom: 20px;
+}
+
+.close-shop {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+
+/* Tablet Portrait and below */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 35px;
+  }
+  .button-settings {
+    display:none;
+  }
+
+  .players-box {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .players-title {
+    font-size: 20px;
+  }
+
+  .player-card {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .invite-button, .start-button {
+    width: 70%;
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .shop-modal {
+    width: 70vw;
+    height: 60vh;
+  }
+
+  .shop-title {
+    font-size: 1.5rem;
+  }
+
+  .shop-box {
+    width: 45%;
+    font-size: 1.25rem;
+    padding: 30px;
+  }
+
+  .close-shop {
+    font-size: 1.25rem;
+    padding: 8px 15px;
+  }
+}
+
+/* Mobile Landscape (above 600px) */
+@media (max-width: 600px) {
+  .logo {
+    font-size: 30px;
+  }
+  .button-settings {
+    display:none;
+  }
+
+  .players-box {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .players-title {
+    font-size: 18px;
+  }
+
+  .player-card {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .invite-button, .start-button {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .shop-modal {
+    width: 80vw;
+    height: 65vh;
+  }
+
+  .shop-title {
+    font-size: 1.25rem;
+  }
+
+  .shop-box {
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 25px;
+  }
+
+  .close-shop {
+    font-size: 1.125rem;
+    padding: 6px 12px;
+  }
+
+  
+}
+
+/* Mobile Portrait and below */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 25px;
+  }
+  .user-stats {
+    margin:3px 12% 0 0;
+  }
+  .shop-modal {
+    position: fixed;
+    top: 20%;
+    left: 5%;
+  }
+  .button-settings {
+    display:none;
+  }
+
+  .players-box {
+    width: 95%;
+    padding: 8px;
+  }
+
+  .players-title {
+    font-size: 16px;
+  }
+
+  .player-card {
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .invite-button, .start-button {
+    width: 90%;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .shop-modal {
+    width: 90vw;
+    height: 70vh;
+  }
+
+  .shop-title {
+    font-size: 1.125rem;
+  }
+
+  .shop-box {
+    width: 100%;
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  .close-shop {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+}
